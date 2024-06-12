@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,6 +77,38 @@
         a:hover {
             text-decoration: underline;
         }
+
+        .collapsible {
+            background-color: #1E293B;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #555;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #1E293B;
+            text-align: left; /* Ensures content is left-aligned */
+        }
+
+        .content p {
+            text-align: left; /* Ensures content within <p> tags is left-aligned */
+        }
+
+        .content a {
+            color: #1E90FF; /* Ensure links within content have the correct color */
+        }
     </style>
 </head>
 <body>
@@ -85,7 +116,6 @@
         <header>
             <h1>Cyber GrayMan</h1>
         </header>
-        <!-- Your script -->
         <div class="slider-content">
             <h2 class="typed_active">Cyber Security Analyst</h2>
         </div>
@@ -198,121 +228,104 @@
                 }
             })(jQuery);
         </script>
-        <!-- End of your script -->
-
         <section id="about">
- 
-<style>
-.collapsible {
-  background-color: #1E293B;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
+            <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/shabeeribm" target="_blank">LinkedIn</a>.</p>
+            <h2>BlueTeam CTF Online Tool List</h2>
+            <p>Click on each section to expand the list of Tools</p>
 
-.active, .collapsible:hover {
-  background-color: #555;
-}
+            <button type="button" class="collapsible">Malware Analysis</button>
+            <div class="content">
+                <p>
+                    <dl>
+                        <p><dt><a href="https://www.virustotal.com/gui/home/upload" target="_blank">Virus Total</a></p>
+                        <p><dt><a href="https://app.any.run/" target="_blank">Any.Run</a></p>
+                        <p><dt><a href="https://tria.ge/reports/public" target="_blank">Malware hash search</a></p>
+                        <p><dt><a href="https://www.hybrid-analysis.com/" target="_blank">Hybrid Analysis</a></p>
+                        <p><dt><a href="https://malapi.io/" target="_blank">Windows API Functions</a></p>
+                        <p><dt><a href="https://filesec.io/" target="_blank">Latest file extensions being used by attackers</a></p>
+                        <p><dt><a href="
+https://malpedia.caad.fkie.fraunhofer.de/
+" target="_blank">Malware search</a></p>
+                        <p><dt><a href="https://app.
+any.run
+/" target="_blank">Any.Run</a></p>
+                    </dl>
+                </p>
+            </div>
 
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #1E293B;
-}
-</style>
-</head>
-<body>
-                      <p>Feel free to connect with me on <a href="
-https://www.linkedin.com/in/shabeeribm
-" target="_blank">LinkedIn</a>.</p>
-<h2>BlueTeam CTF Online Tool List</h2>
-<p>Click on each section to expand the list of Tools</p>
+            <button type="button" class="collapsible">General Search</button>
+            <div class="content">
+                <p>
+                    <dl>
+                        <p><dt><a href="
+https://who.is/
+" target="_blank">whois search</a></p>
+                        <p><dt><a href="
+https://iplocation.io/
+" target="_blank">IPlocation lookup</a></p>
+                        <p><dt><a href="
+https://www.iplocation.net/
+" target="_blank">IP Lookup</a></p>
+                        <p><dt><a href="
+https://www.speedguide.net/port.php?port=443
+" target="_blank">To search Port Details</a></p>
+                        <p><dt><a href="
+https://app.netlas.io/host/
+" target="_blank">Discover search and monitor any host</a></p>
+                        <p><dt><a href="
+https://www.kali.org/
+" target="_blank">Kali Linux</a></p>
+                    </dl>
+                </p>
+            </div>
 
+            <button type="button" class="collapsible">Threat Hunting</button>
+            <div class="content">
+                <p>
+                    <dl>
+                        <p><dt><a href="
+https://threatfox.abuse.ch/
+" target="_blank">ThreatFox Browse IOC</a></p>
+                        <p><dt><a href="
+https://bazaar.abuse.ch/
+" target="_blank">MalwareBazaar</a></p>
+                    </dl>
+                </p>
+            </div>
 
-<button type="button" class="collapsible">Malware Analysis</button>
-<div class="content">
-  <p>    <DL><p>
-		
-		<p><DT><A HREF="https://www.virustotal.com/gui/home/upload"target="_blank">Virus Total</A></p>
-		<p><DT><A HREF="https://app.any.run/"target="_blank">Any.Run</A></p>
-		<p><DT><A HREF="https://tria.ge/reports/public"target="_blank">Malware hash search</A></p>
-		<p><DT><A HREF="https://www.hybrid-analysis.com/"target="_blank">Hybrid Analysis</A></p>
-		<p><DT><A HREF="https://malapi.io/"target="_blank">Windows API Functions</A></p>
-		<p><DT><A HREF="https://filesec.io/"target="_blank">Latest file extensions being used by attackers</A></p>
-		<p><DT><A HREF="https://malpedia.caad.fkie.fraunhofer.de/"target="_blank">Malware searc</A></p>
-		<p><DT><A HREF="https://app.any.run/"target="_blank">Any.Run</A></p>
-		
-	
-    </DL><p></p>
-</div>
+            <button type="button" class="collapsible">PCAP Analysis</button>
+            <div class="content">
+                <p>
+                    <dl>
+                        <p><dt><a href="
+https://lab.dynamite.ai/
+" target="_blank">Dynamite Analytics</a></p>
+                        <p><dt><a href="
+https://apackets.com/
+" target="_blank">Effortless PCAP File Analysis in Your Browser</a></p>
+                    </dl>
+                </p>
+            </div>
 
-<button type="button" class="collapsible">General Search</button>
-<div class="content">
-  <p>    <DL><p>
-		
-		<p><DT><A HREF="https://who.is/ "target="_blank">whois search</A></p>
-		<p><DT><A HREF="https://iplocation.io/"target="_blank">IPlocation lookup</A></p>
-		<p><DT><A HREF="https://www.iplocation.net/"target="_blank">IP Lookup </A></p>
-		<p><DT><A HREF="https://www.speedguide.net/port.php?port=443"target="_blank">To search Port Details</A></p>
-		<p><DT><A HREF="https://app.netlas.io/host/"target="_blank">Discover search and monitor any host</A></p>
-		<p><DT><A HREF="https://www.kali.org/"target="_blank">Kali Linux</A></p>
-		
-	
-    </DL><p></p>
-</div>
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
 
-
-<button type="button" class="collapsible">Threat Hunting</button>
-<div class="content">
-  <p>    <DL><p>
-		
-	<p><DT><A HREF="https://threatfox.abuse.ch/"target="_blank">ThreatFox Browse IOC</A></p>
-		<p><DT><A HREF="https://bazaar.abuse.ch/"target="_blank">MalwareBazaar</A></p>
-	
-    </DL><p></p>
-</div>
-
-		
-<button type="button" class="collapsible">PCAP Analysys  </button>
-<div class="content">
-  <p>    <DL><p>
-
-		<p><DT><A HREF="https://lab.dynamite.ai/" target="_blank" >Dynamite Analytics</A></p>
-		<p><DT><A HREF="https://apackets.com/" target="_blank" >Effortless PCAP File Analysis in Your Browser</A></p>
-	
-    </DL><p></p>
-</div>
-	
-
-
-
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-</script>
-            
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                            content.style.display = "none";
+                        } else {
+                            content.style.display = "block";
+                        }
+                    });
+                }
+            </script>
         </section>
         <footer>
-            &copy;  Cyber GrayMan
+            &copy; Cyber GrayMan
         </footer>
     </div>
 </body>
